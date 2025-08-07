@@ -106,19 +106,26 @@ nav{
     border-radius: 20px;
 }
 .checkin{
-    padding: 20%;
+    padding: 10%;
     background-color: rgb(27, 238, 27);
     align-items: center;
-
+    text-align: center;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
 }
 .checkout{
-    padding: 20%;
+    padding: 10%;
     background-color: rgb(12, 12, 12);
     color: white;
+    font-size: 13px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .active-bookings{
     line-height: 5px;
-    padding: 20px;
+    padding: 13px;
     background-color: white;
 }
 .percent{
@@ -270,9 +277,21 @@ th{
 }
 .body-container1{
     display: grid;
-    grid-template-columns: 150px 150px 240px 240px 240px auto;
+    grid-template-columns: 90px 90px 240px 240px 240px;
     gap: 10px;
+    align-self: start;
 }
 .text{
     font-size: 12px;
+}
+.new-big-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.new-booking-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
 }
