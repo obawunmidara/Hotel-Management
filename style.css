@@ -113,6 +113,7 @@ nav{
     font-size: 14px;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 .checkout{
     padding: 10%;
@@ -122,11 +123,14 @@ nav{
     text-align: center;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 .active-bookings{
     line-height: 5px;
-    padding: 13px;
+    padding: 15px;
     background-color: white;
+    border-radius: 15px;
+    align-self: start;
 }
 .percent{
     font-size: 35px;
@@ -253,13 +257,14 @@ table{
     line-height: 30px;
 }
 td{
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 th{
     text-align: left;
-    padding: 20px;
+    padding: 10px;
+    font-size: 12px;
 }
 .new-booking-header{
     display: flex;
@@ -273,13 +278,16 @@ th{
     align-items: center;
 }
 .table{
-    margin-top: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    /* align-self: stretch; */
 }
 .body-container1{
     display: grid;
-    grid-template-columns: 90px 90px 240px 240px 240px;
+    grid-template-columns: 100px 100px 240px 240px 250px;
     gap: 10px;
-    align-self: start;
+    /* align-self: start; */
 }
 .text{
     font-size: 12px;
@@ -288,10 +296,20 @@ th{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 .new-booking-title{
     font-size: 20px;
     font-weight: bold;
     color: black;
     margin-bottom: 10px;
+}
+.check-in-logo{
+    margin-top: 30px;
+}
+.big-table-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 970px 370px;
 }
