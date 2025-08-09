@@ -10,6 +10,9 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: rgba(202, 202, 202, 0.3);
 }
+h1{
+    margin-left: 40px;
+}
 .nav-list1{
     display: flex;
     gap: 10px;
@@ -257,13 +260,13 @@ table{
     line-height: 30px;
 }
 td{
-    padding: 10px;
+    padding: 7px;
     text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 th{
     text-align: left;
-    padding: 10px;
+    padding: 7px;
     font-size: 12px;
 }
 .new-booking-header{
@@ -281,11 +284,13 @@ th{
     background-color: #fff;
     padding: 10px;
     border-radius: 15px;
+    height: 580px;
     /* align-self: stretch; */
+    overflow-y: auto;
 }
 .body-container1{
     display: grid;
-    grid-template-columns: 100px 100px 240px 240px 250px;
+    grid-template-columns: 95px 95px 235px 235px 235px;
     gap: 10px;
     /* align-self: start; */
 }
@@ -311,5 +316,110 @@ th{
 .big-table-container{
     display: grid;
     gap: 10px;
-    grid-template-columns: 970px 370px;
+    grid-template-columns: 935px;
+}
+.new-orders-text{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.order-number{
+    font-size: 35px;
+    font-weight: bold;
+}
+.orders-details-container{
+    background-color: rgba(54, 53, 109, 0.384);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px;
+    border-radius: 10px;
+}
+.fa-solid.fa-utensils{
+    font-size: 20px;
+    color : purple;
+    padding: 7px;
+    background-color: rgba(128, 0, 128, 0.425);
+    border-radius: 50%;
+}
+.content2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.fa-solid.fa-fire{
+    font-size: 20px;
+    color : rgb(255, 230, 0);
+    padding: 7px;
+    background-color: rgba(229, 255, 0, 0.425);
+    border-radius: 50%;
+}
+.fa-solid.fa-bowl-food{
+    font-size: 20px;
+    color : rgb(33, 226, 120);
+    padding: 7px;
+    background-color: rgba(33, 226, 120, 0.425);
+    border-radius: 50%;
+}
+.fa-solid.fa-xmark{
+    font-size: 20px;
+    color : rgb(255, 0, 0);
+    padding: 7px;
+    background-color: rgba(255, 0, 0, 0.425);
+    border-radius: 50%;
+}
+.order-status-text{
+    color: rgba(0, 0, 0, 0.493);
+}
+.order-status{
+    margin: 10px 0;
+}
+.filter-by{
+    color: rgba(0, 0, 0, 0.493);
+}
+.filter-by-item{
+    margin: 10px 0;
+    color: black;
+}
+.filters-container{
+    padding: 5px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.food-item-header-details{
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+    gap: 5px;
+}
+.food-orderer-name{
+    color: black;
+}
+.food-item-order{
+    font-size: 12px;
+}
+.food-item-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.status-new{
+    background-color: rgba(27, 238, 27, 0.473);
+    color:  rgb(27, 238, 27);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+.food-item-buyer{
+    display: flex;
+    line-height: 10px;
+    gap: 30px;
+}
+.food-item-buyer-name{
+    color: rgba(0, 0, 0, 0.438);
+}
+.food-item-buyer-payment-text{
+    color: rgba(0, 0, 0, 0.438);
 }
