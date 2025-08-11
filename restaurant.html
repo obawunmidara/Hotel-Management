@@ -21,7 +21,7 @@
             <ul class="nav-list2">
                 <li class="nav-item"><a href="rooms.html" class="navitem">Dashboard</a></li>
                 <li class="nav-item"><a href="services.html" class="navitem">Guests</a></li>
-                <li class="nav-item"><a href="contact.html" class="navitem">Reservations</a></li>
+                <li class="nav-item"><a href="reservations.html" class="navitem">Reservations</a></li>
                 <li class="nav-item"><a href="about.html" class="navitem">Rooms</a></li>
                 <li class="nav-item"><a href="faq.html" class="navitem">Restaurants</a></li>
             </ul>
@@ -93,84 +93,690 @@
             </div>
         </div>
     </div>
-    <div class="filters-container">
-        <h3 class="filters">
-            Filters
-        </h3>
-        <div class="order-status-container">
-            <h4 class="order-status-text">
-                Order Status
-            </h4>
-            <div class="order-status">
-                <input type="checkbox" id="new-orders" name="order-status" value="new-orders">
-                <label for="new-orders">New Orders</label>
-            </div>
-            <div class="order-status">
-                <input type="checkbox" id="on-progress" name="order-status" value="on-progress">
-                <label for="on-progress">On Progress</label>
-            </div>
-            <div class="order-status">
-                <input type="checkbox" id="ready-to-serve" name="order-status" value="ready-to-serve">
-                <label for="ready-to-serve">Ready to Serve</label>
-            </div>
-            <div class="order-status">
-                <input type="checkbox" id="cancelled-orders" name="order-status" value="cancelled-orders">
-                <label for="cancelled-orders">Cancelled Orders</label>
-            </div>
-        </div>
-        <div class="filter-by">
-            <h4>Filter By</h4>
-            <div class="filter-by-item">
-                <input type="checkbox" id="recent-orders" name="filter-by" value="recent-orders">
-                <label for="recent-orders">Recent Orders</label>
-            </div>
-            <div class="filter-by-item">
-                <input type="checkbox" id="last-hour" name="last-hour" value="last-hour">
-                <label for="last-hour">Last hour</label>
-            </div>
-            <div class="filter-by-item">
-                <input type="checkbox" id="last-24-hours" name="last-24-hours" value="last-24-hours">
-                <label for="last-24-hours">Last 24 hours</label>
-            </div>
-            <div class="filter-by-item">
-                <input type="checkbox" id="custom-dates" name="custom-dates" value="custom-dates">
-                <label for="custom-dates">Custom Dates</label>
-            </div>
-        </div>
-    </div>
-    <div class="food-items">
-        <div class="food-items-container">
-            <div class="food-item-header">
-                <div class="food-item-header-details">
-                    <i class="fa-regular fa-user"></i>
-                
-                    <div class="food-item-header-name">
-                        <h4 class="food-orderer-name">Jerome Bell</h4>
-                        <p class="food-item-order">Order #12345</p>
-                    </div>
+    <div class="big-container">
+        <div class="filters-container">
+            <h3 class="filters">
+                Filters
+            </h3>
+            <div class="order-status-container">
+                <h4 class="order-status-text">
+                    Order Status
+                </h4>
+                <div class="order-status">
+                    <input type="checkbox" id="new-orders" name="order-status" value="new-orders">
+                    <label for="new-orders">New Orders</label>
                 </div>
                 <div class="order-status">
-                    <span class="status-new">New</span>
+                    <input type="checkbox" id="on-progress" name="order-status" value="on-progress">
+                    <label for="on-progress">On Progress</label>
+                </div>
+                <div class="order-status">
+                    <input type="checkbox" id="ready-to-serve" name="order-status" value="ready-to-serve">
+                    <label for="ready-to-serve">Ready to Serve</label>
+                </div>
+                <div class="order-status">
+                    <input type="checkbox" id="cancelled-orders" name="order-status" value="cancelled-orders">
+                    <label for="cancelled-orders">Cancelled Orders</label>
                 </div>
             </div>
-            <div class="food-item-buyer">
-                <div class="food-item-buyer-details">
-                    <p class="food-item-buyer-name">Room number</p>
-                    <p class="food-item-buyer-room-number">D-08</p>
+            <div class="filter-by">
+                <h4>Filter By</h4>
+                <div class="filter-by-item">
+                    <input type="checkbox" id="recent-orders" name="filter-by" value="recent-orders">
+                    <label for="recent-orders">Recent Orders</label>
                 </div>
-                <div class="food-item-buyer-address">
-                    <p class="food-item-buyer-payment-text">Total Payment</p>
-                    <p class="food-item-buyer-payment-price">$50.00</p>
+                <div class="filter-by-item">
+                    <input type="checkbox" id="last-hour" name="last-hour" value="last-hour">
+                    <label for="last-hour">Last hour</label>
+                </div>
+                <div class="filter-by-item">
+                    <input type="checkbox" id="last-24-hours" name="last-24-hours" value="last-24-hours">
+                    <label for="last-24-hours">Last 24 hours</label>
+                </div>
+                <div class="filter-by-item">
+                    <input type="checkbox" id="custom-dates" name="custom-dates" value="custom-dates">
+                    <label for="custom-dates">Custom Dates</label>
                 </div>
             </div>
-            <div class="food-item-details">
-
+        </div>
+        <div class="food-items">
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <img src="icons8-avatar.gif" alt="" class="profile-logo">
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <img class="beef-steak" src="plate-salmon-steak-with-broccoli.jpg" alt="Beef Steak">
+                                <div class="food-item-header-name">
+                                    <h5 class="food-orderer-name">Grilled salmon with vegetables</h5>
+                                    <p class="food-item-order">$18.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <img class="beef-steak" src="beef steak.jpg" alt="Beef Steak">
+                                <div class="food-item-header-name">
+                                    <h5 class="food-orderer-name">Garden Salad</h5>
+                                    <p class="food-item-order">$11.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        No dressing on the salad
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
             </div>
-            <div class="order-note">
-
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <img src="icons8-avatar.gif" alt="" class="profile-logo">                        
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <img class="beef-steak" src="beef steak.jpg" alt="Beef Steak">
+                                <div class="food-item-header-name">
+                                    <h5 class="food-orderer-name">Beef steak</h5>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h5 class="food-orderer-name">Mashed Potatoes</h5>
+                                    <p class="food-item-order">$12.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
             </div>
-            <div class="order-details">
-
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <img src="icons8-avatar.gif" alt="" class="profile-logo">
+                        <div class="food-item-header-name">
+                            <h5 class="food-orderer-name-jerome">Jerome Bell</h5>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h5 class="food-orderer-name">Chicken curry with basmati rice</h5>
+                                    <p class="food-item-order">$16.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h5 class="food-orderer-name">Garden salad</h5>
+                                    <p class="food-item-order">$11.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
+            </div>
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
+            </div>
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
+            </div>
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
+            </div>
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <img class="beef-steak" src="beef steak.jpg" alt="Beef Steak">
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
+            </div>
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                    
+                </div>
+            </div>
+            <div class="food-items-container">
+                <div class="food-item-header">
+                    <div class="food-item-header-details">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="food-item-header-name">
+                            <h3 class="food-orderer-name-jerome">Jerome Bell</h3>
+                            <p class="food-item-order">Order #12345</p>
+                        </div>
+                    </div>
+                    <div class="order-status">
+                        <span class="status-new">Ready to serve</span>
+                    </div>
+                </div>
+                <div class="food-item-buyer">
+                    <div class="food-item-buyer-details">
+                        <p class="food-item-buyer-name">Room number</p>
+                        <p class="food-item-buyer-room-number">D-08</p>
+                    </div>
+                    <div class="food-item-buyer-address">
+                        <p class="food-item-buyer-payment-text">Total Payment</p>
+                        <p class="food-item-buyer-payment-price">$50.00</p>
+                    </div>
+                </div>
+                <div class="food-item-details">
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                    <div class="first-food-item">
+                        <div class="individual-food-details">
+                            <div class="food-item-header-details">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="food-item-header-name">
+                                    <h4 class="food-orderer-name">Beef steak</h4>
+                                    <p class="food-item-order">$22.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-status">
+                            <span class="quantity">1x</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalitems">
+                    <p class="additional-items">
+                        <i class="fa-solid fa-plus"></i> 2 more items
+                    </p>
+                </div>
+                <div class="order-note-main">
+                    <p class="order-note">
+                        Order Notes
+                    </p>
+                    <p class="order-notes-detail">
+                        Steak well-done, no gravy on potatoes
+                    </p>
+                </div>
+                <div class="order-details">
+                    Order details
+                </div>
             </div>
         </div>
     </div>

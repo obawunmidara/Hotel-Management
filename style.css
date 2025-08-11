@@ -284,7 +284,7 @@ th{
     background-color: #fff;
     padding: 10px;
     border-radius: 15px;
-    height: 580px;
+    height: 500px;
     /* align-self: stretch; */
     overflow-y: auto;
 }
@@ -393,11 +393,12 @@ th{
     line-height: 0px;
     gap: 5px;
 }
-.food-orderer-name{
+.food-orderer-name-jerome{
     color: black;
 }
 .food-item-order{
     font-size: 12px;
+    color: rgba(0, 0, 0, 0.493);
 }
 .food-item-header{
     display: flex;
@@ -405,8 +406,8 @@ th{
     align-items: center;
 }
 .status-new{
-    background-color: rgba(27, 238, 27, 0.473);
-    color:  rgb(27, 238, 27);
+    background-color: rgba(6, 252, 80, 0.308);
+    color:   rgb(33, 226, 97);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -422,4 +423,78 @@ th{
 }
 .food-item-buyer-payment-text{
     color: rgba(0, 0, 0, 0.438);
+}
+.first-food-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.additionalitems{
+    display: flex;
+    justify-content: end;
+    line-height: 2px;
+    color: rgba(0, 0, 0, 0.438);
+}
+.order-note-main{
+    line-height: 7px;
+}
+.order-note{
+     color: rgba(0, 0, 0, 0.438);
+}
+.order-details{
+    justify-content: center;
+    border: 1px solid rgba(3, 3, 3, 0.336);
+    display: flex;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+.food-items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 470px;
+    overflow-y: auto;
+}
+.food-items-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.big-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.food-item-buyer-details{
+    background-color: rgba(202, 202, 202, 0.3);
+    margin: 5px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.food-item-buyer-address{
+    background-color: rgba(202, 202, 202, 0.3);
+    padding: 0 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.filters-container{
+    align-self: start;
+}
+.food-item-buyer{
+    margin-top: 20px;
+}
+.beef-steak{
+    width: 15%;
+    border-radius: 10px;
+}
+.order-note-main{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgba(202, 202, 202, 0.3);
+}
+.month-div{
+    position: absolute;
+    right: 110px;
 }

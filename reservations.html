@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="hotel.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="hotel.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-logo"><a href="#"><img src="orjinal-dijital-icon-seeklogo.png" alt="Hotel Logo"></a></li>
+                <li class="nav-name"><a href="index.html" class="navname">Inntegrate</a></li>
+            </ul>
+            <ul class="nav-list2">
+                <li class="nav-item"><a href="rooms.html" class="navitem">Dashboard</a></li>
+                <li class="nav-item"><a href="services.html" class="navitem">Guests</a></li>
+                <li class="nav-item"><a href="reservations.html" class="navitem">Reservations</a></li>
+                <li class="nav-item"><a href="about.html" class="navitem">Rooms</a></li>
+                <li class="nav-item"><a href="restaurant.html" class="navitem">Restaurants</a></li>
+            </ul>
+            <ul class="nav-list3">
+                <li class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="nav-item"><i class="fa-regular fa-envelope"></i></li>
+                <li class="nav-item"><i class="fa-solid fa-bell"></i></li>
+                <li class="nav-item"><i class="fa-solid fa-user"></i></li>
+           </ul>
+        </nav>
+
+        <div class="container1">
+            <div class="content1">
+                <h2>Reservations</h2>
+                <div class="calendar">
+                    <span class="calendar-btn">
+                        <button class="new-reservation">
+                            <i class="fa-solid fa-plus"></i>
+                            <span class="btn-text">New Reservation</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="bigger-container">
+                <div class="content2-new">
+                    <span class="all">
+                        All
+                    </span>
+                    <span class="all">
+                        New
+                    </span>
+                    <span class="all">
+                        Confirmed
+                    </span>
+                    <span class="all">
+                        Checked In
+                    </span>
+                    <span class="all">
+                        Checked Out
+                    </span>
+                    <span class="all">
+                        Completed
+                    </span>
+                    <span class="all">
+                        Cancelled
+                    </span>
+                </div>
+                <div class="other-side">
+                    <button class="other-side-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                    <button class="other-side-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <div class="content1">
+                <div class="reservation-first-part">
+                    <h3>Reservations List</h3>
+                    <div class="reservation-count">An overview of all active reservations</div>
+                </div>
+                <div class="calendar">
+                    <span class="calendar-btn">
+                        <button class="new-reservation">
+                            <i class="fa-solid fa-plus"></i>
+                            <span class="btn-text">New Reservation</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr class="table-header">
+                        <th>Booking ID</th>
+                        <th>Guest Name</th>
+                        <th>Email Address</th>
+                        <th>Room Number</th>
+                        <th>Room Type</th>
+                        <th>Checked In</th>
+                        <th>Checked Out</th>
+                        <th>Status</th>
+                        <!-- <th></th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                        <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1233</td>
+                        <td style="display: flex; align-items: center;">
+                            <img src="icons8-avatar-50.png" alt="" class="gues-name-profile">
+                            <span class="reservation-owner-name">Alex Trie</span>
+                        </td>
+                        <td>Alex08@gmail.com</td>
+                        <td>S-01</td>
+                        <td>Single</td>
+                        <td>Jan 26, 2025</td>
+                        <td>Jan 30, 2025</td>
+                        <td>
+                            <div class="new">
+                                <span class="status">New</span>
+                            </div>
+                        </td>
+                         <td>
+                            <td class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
