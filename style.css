@@ -7,11 +7,14 @@
     margin-top: 5px;
 }
 body{
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgba(202, 202, 202, 0.3);
 }
-h1{
+.good-morning{
     margin-left: 40px;
+    font-size: 40px;
+    font-weight: bold;
 }
 .nav-list1{
     display: flex;
@@ -109,7 +112,7 @@ nav{
     border-radius: 20px;
 }
 .checkin{
-    padding: 10%;
+    padding: 24% 10%;
     background-color: rgb(27, 238, 27);
     align-items: center;
     text-align: center;
@@ -117,9 +120,10 @@ nav{
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    align-self: start;
 }
 .checkout{
-    padding: 10%;
+    padding: 29% 10%;
     background-color: rgb(12, 12, 12);
     color: white;
     font-size: 13px;
@@ -127,6 +131,7 @@ nav{
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    align-self: start;
 }
 .active-bookings{
     line-height: 5px;
@@ -290,7 +295,7 @@ th{
 }
 .body-container1{
     display: grid;
-    grid-template-columns: 95px 95px 235px 235px 235px;
+    grid-template-columns: 95px 95px 235px 235px 235px auto;
     gap: 10px;
     /* align-self: start; */
 }
@@ -468,13 +473,13 @@ th{
     gap: 10px;
 }
 .food-item-buyer-details{
-    background-color: rgba(202, 202, 202, 0.3);
+    background-color: rgba(202, 202, 202, 0.185);
     margin: 5px;
     padding: 0 10px;
     border-radius: 10px;
 }
 .food-item-buyer-address{
-    background-color: rgba(202, 202, 202, 0.3);
+    background-color: rgba(202, 202, 202, 0.185);
     padding: 0 10px;
     margin: 5px;
     border-radius: 10px;
@@ -498,3 +503,67 @@ th{
     position: absolute;
     right: 110px;
 }
+@media screen and (max-width: 600px) {
+    .header-container{
+    background-color: black;
+    color: white;
+    padding: 0px;
+    border-radius: 20px;
+}
+    .nav-list1, .nav-list2, .nav-list3{
+        display: none;
+    }
+    .responsive-nav-bar{
+        display: block;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .nav-item a{
+        font-size: 16px;
+    }
+.good-morning{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.btn-text{
+    font-size: 10px;
+    padding: 0px;
+}
+.new-reservation{
+    background-color: #c587e2;
+    color: white;
+    padding: 1px;
+    border-radius: 2px;
+    /* text-decoration: none; */
+    font-size: 23px;
+    border: none;
+    align-items: center;
+}
+.calendar-text{
+    font-size: 12px;
+}
+.fa-solid.fa-plus{
+    font-size: 12px;
+}
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 992px) {
+    /* .main-room-container{
+        grid-template-columns: auto auto;
+    }
+    .content2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .body-container1{
+        grid-template-columns: 95px 95px 235px;
+    }
+    .big-table-container{
+        grid-template-columns: 100%;
+    } */
+}
+

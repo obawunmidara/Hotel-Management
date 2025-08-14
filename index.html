@@ -22,7 +22,7 @@
                 <li class="nav-item"><a href="rooms.html" class="navitem">Dashboard</a></li>
                 <li class="nav-item"><a href="services.html" class="navitem">Guests</a></li>
                 <li class="nav-item"><a href="reservations.html" class="navitem">Reservations</a></li>
-                <li class="nav-item"><a href="about.html" class="navitem">Rooms</a></li>
+                <li class="nav-item"><a href="room.html" class="navitem">Rooms</a></li>
                 <li class="nav-item"><a href="restaurant.html" class="navitem">Restaurants</a></li>
             </ul>
             <ul class="nav-list3">
@@ -31,11 +31,14 @@
                 <li class="nav-item"><i class="fa-solid fa-bell"></i></li>
                 <li class="nav-item"><i class="fa-solid fa-user"></i></li>
            </ul>
+           <button class="responsive-nav-bar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
 
         <div class="container1">
             <div class="content1">
-                <h1>Good morning Alex!</h1>
+                <div class="good-morning">Good morning Alex!</div>
                 <div class="calendar">
                     <span class="calendar-span">
                         <i class="fa-solid fa-calendar-days"></i>
@@ -89,17 +92,97 @@
                         </div>
                     </div>
                 </div>
-        <div class="active-bookings">
-            <h5>Guest Satisfaction</h5>
-            <p class="text">
-                Compared to (85%) last month
-            </p>
-            <div class="percentage">
-                <div class="percent">
-                    4.7/5
+                <div class="active-bookings">
+                    <h5>Guest Satisfaction</h5>
+                    <p class="text">
+                        Compared to (85%) last month
+                    </p>
+                    <div class="percentage">
+                        <div class="percent">
+                            4.7/5
+                        </div>
+                        <div class="increment">
+                            +15%
+                        </div>
+                    </div>
                 </div>
-                <div class="increment">
-                    +15%
+                <div class="active-bookings">
+                    <div class="active">
+                        <div class="first">
+                            <h5>Booking</h5>
+                            <p class="text">
+                                Compared to (85%) last month
+                            </p>
+                        </div>
+                        <div class="quantity">
+                            <button class="dropdown-btn">
+                                <i class="fa-solid fa-caret-down"></i>
+                                <span class="btn-text" onclick="toggleDropdown()">Quantity</span>
+                            </button>
+                            <div class="dropdown-item" id="dropdownContainer">
+                                <ul class="dropdown-list" id="dropdownList">
+                                    <li class="dropdown-item1">1</li>
+                                    <li class="dropdown-item2">2</li>
+                                    <li class="dropdown-item3">3</li>
+                                    <li class="dropdown-item4">4</li>
+                                    <li class="dropdown-item5">5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charts">
+                        <div class="individual-charts">
+                            <div class="chart" id="chart">
+                                <div class="main-chart-container">
+                                    <div class="big-container">
+                                        <div class="charts-container">
+                                            <div class="vertical-line">
+
+                                            </div>
+                                            <div class="chart-container">
+
+                                            </div>
+                                        </div>
+                                        <div class="month">
+                                                <!-- <div class="month-div">
+                                                    January
+                                                </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="big-container">
+                                        <div class="charts-container">
+                                            <div class="vertical-line">
+
+                                            </div>
+                                            <div class="chart-container2">
+
+                                            </div>
+                                        </div>
+                                        <div class="month">
+                                                <!-- <div class="month-div">
+                                                    January
+                                                </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="big-container">
+                                        <div class="charts-container">
+                                            <div class="vertical-line">
+
+                                            </div>
+                                            <div class="chart-container3">
+
+                                            </div>
+                                        </div>
+                                        <div class="month">
+                                                <!-- <div class="month-div">
+                                                    January
+                                                </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -361,9 +444,7 @@
         
     </div>
     </div>
-    <div class="bigger-footer-div">
-            <div class="active-bookings">
-        <div class="active-bookings">
+    <div class="bigger-footer-div">    
         <div class="active">
             <div class="first">
                 <h5>Booking</h5>
@@ -390,15 +471,6 @@
         <div class="charts">
             <div class="individual-charts">
                 <div class="chart" id="chart">
-                    <!-- <div class="number1">
-                        455
-                    </div>
-                    <div class="number2">
-                        55
-                    </div>
-                    <div class="number3">
-                        45
-                    </div> -->
                     <div class="main-chart-container">
                         <div class="big-container">
                             <div class="charts-container">
@@ -446,136 +518,51 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>    
-    </div>
-        <div class="active">
-            <div class="first">
-            <h5>Booking</h5>
-            <p class="text">
-                Compared to (85%) last month
-            </p>
-            </div>
-            <div class="quantity">
-                <button class="dropdown-btn">
-                    <i class="fa-solid fa-caret-down"></i>
-                    <span class="btn-text" onclick="toggleDropdown()">Quantity</span>
-                </button>
-                <div class="dropdown-item" id="dropdownContainer">
-                    <ul class="dropdown-list" id="dropdownList">
-                        <li class="dropdown-item1">1</li>
-                        <li class="dropdown-item2">2</li>
-                        <li class="dropdown-item3">3</li>
-                        <li class="dropdown-item4">4</li>
-                        <li class="dropdown-item5">5</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="charts">
-        <div class="individual-charts">
-            <div class="chart" id="chart">
-                <!-- <div class="number1">
-                    455
-                </div>
-                <div class="number2">
-                    55
-                </div>
-                <div class="number3">
-                    45
-                </div> -->
-                <div class="main-chart-container">
-                    <div class="big-container">
-                        <div class="charts-container">
-                            <div class="vertical-line">
+                    <div class="main-chart-container">
+                        <div class="big-container">
+                            <div class="charts-container">
+                                <div class="vertical-line">
 
+                                </div>
+                                <div class="chart-container">
+
+                                </div>
                             </div>
-                            <div class="chart-container">
-
+                            <div class="month">
+                                    <!-- <div class="month-div">
+                                        January
+                                    </div> -->
                             </div>
                         </div>
-                        <div class="month">
-                                <!-- <div class="month-div">
-                                    January
-                                </div> -->
-                        </div>
-                    </div>
-                    <div class="big-container">
-                        <div class="charts-container">
-                            <div class="vertical-line">
+                        <div class="big-container">
+                            <div class="charts-container">
+                                <div class="vertical-line">
 
+                                </div>
+                                <div class="chart-container2">
+
+                                </div>
                             </div>
-                            <div class="chart-container2">
-
-                            </div>
-                        </div>
-                        <div class="month">
-                                <!-- <div class="month-div">
-                                    January
-                                </div> -->
-                        </div>
-                    </div>
-                    <div class="big-container">
-                        <div class="charts-container">
-                            <div class="vertical-line">
-
-                            </div>
-                            <div class="chart-container3">
-
+                            <div class="month">
+                                    <!-- <div class="month-div">
+                                        January
+                                    </div> -->
                             </div>
                         </div>
-                        <div class="month">
-                                <!-- <div class="month-div">
-                                    January
-                                </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="main-chart-container">
-                    <div class="big-container">
-                        <div class="charts-container">
-                            <div class="vertical-line">
+                        <div class="big-container">
+                            <div class="charts-container">
+                                <div class="vertical-line">
 
-                            </div>
-                            <div class="chart-container">
+                                </div>
+                                <div class="chart-container3">
 
+                                </div>
                             </div>
-                        </div>
-                        <div class="month">
-                                <!-- <div class="month-div">
-                                    January
-                                </div> -->
-                        </div>
-                    </div>
-                    <div class="big-container">
-                        <div class="charts-container">
-                            <div class="vertical-line">
-
+                            <div class="month">
+                                    <!-- <div class="month-div">
+                                        January
+                                    </div> -->
                             </div>
-                            <div class="chart-container2">
-
-                            </div>
-                        </div>
-                        <div class="month">
-                                <!-- <div class="month-div">
-                                    January
-                                </div> -->
-                        </div>
-                    </div>
-                    <div class="big-container">
-                        <div class="charts-container">
-                            <div class="vertical-line">
-
-                            </div>
-                            <div class="chart-container3">
-
-                            </div>
-                        </div>
-                        <div class="month">
-                                <!-- <div class="month-div">
-                                    January
-                                </div> -->
                         </div>
                     </div>
                 </div>
