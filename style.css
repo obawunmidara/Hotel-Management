@@ -729,4 +729,7 @@ th{
     body{
         overflow-x: hidden;
     }
+    .nav-list1, .nav-list2, .nav-list3{
+        display: none;
+    }
 }
