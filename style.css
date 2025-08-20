@@ -281,8 +281,9 @@ th{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 900px;
+
 }
 .active{
     display: flex;
@@ -296,13 +297,14 @@ th{
     background-color: #fff;
     padding: 0px;
     border-radius: 15px;
-    width: 920px;
+    width: 935px;
 }
 .table{
     height: 405px;
     overflow-y: auto;
     width: 100%;
     overflow-x: auto;
+    margin: 0;
 }
 .body-container1{
     display: grid;
@@ -585,126 +587,6 @@ th{
 .active-bigger{
     background-color: white;
 }
-@media screen and (max-width: 600px) {
-    .header-container{
-    background-color: black;
-    color: white;
-    padding: 0px;
-    border-radius: 20px;
-}
-    .nav-list1, .nav-list2, .nav-list3{
-        display: none;
-    }
-    .responsive-nav-bar{
-        display: block;
-        background-color: black;
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 20px;
-    }
-    .nav-item a{
-        font-size: 16px;
-    }
-    .good-morning{
-        margin-left: 10px;
-        font-size: 20px;
-    }
-    .btn-text{
-        font-size: 10px;
-        padding: 0px;
-    }
-    .new-reservation{
-        background-color: #c587e2;
-        color: white;
-        padding: 1px;
-        border-radius: 2px;
-        /* text-decoration: none; */
-        font-size: 23px;
-        border: none;
-        align-items: center;
-    }
-    .calendar-text{
-        font-size: 12px;
-    }
-    .fa-solid.fa-plus{
-        font-size: 12px;
-    }
-     .active{
-    display: flex;
-    align-items: center;
-    }
-}
-@media screen and (max-width: 768px) {
-    
-}
-@media screen and (min-width: 1024px) {
-    /* .main-room-container{
-        grid-template-columns: auto auto;
-    }
-    .content2{
-        grid-template-columns: 1fr 1fr;
-    }
-    .body-container1{
-        grid-template-columns: 95px 95px 235px;
-    }
-    .big-table-container{
-        grid-template-columns: 100%;
-    } */
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .bigger-footer-div{
-        display: none;
-    }
-    .new-booking-header{
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        margin-bottom: 20px;
-    }
-}
-@media screen and (min-width: 991px) and (max-width: 1024px) {
-    .bigger-footer-div{
-        display: none;
-    }
-    .new-booking-header{
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        margin-bottom: 20px;
-        gap: 500px;
-    }
-    .body-container1{
-    display: grid;
-    grid-template-columns: 95px 95px 235px 235px 235px;
-    gap: 10px;
-    margin-left: 50px;
-    /* align-self: start; */
-    }
-    table{
-    margin-top: 30px;
-    line-height: 30px;
-    }
-    td{
-        padding: 12px;
-        text-align: left;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        margin: 0 130px;
-    }
-    th{
-        text-align: left;
-        padding: 12px;
-        margin: 0 130px;
-    }
-    .table{
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 15px;
-    height: 440px;
-    /* align-self: stretch; */
-    overflow-y: auto;
-    }
-}
 @media screen and (max-width: 768px) {
     .body-container1{
     display: inline-block;
@@ -714,24 +596,24 @@ th{
         display: none;
     }
     .checkin{
-    padding: 10px;
-    background-color: rgb(27, 238, 27);
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-}
-.checkout{
-    padding: 10px;
-    background-color: rgb(12, 12, 12);
-    color: white;
-    font-size: 13px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
+        padding: 10px;
+        background-color: rgb(27, 238, 27);
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    .checkout{
+        padding: 10px;
+        background-color: rgb(12, 12, 12);
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
     }
     .body-container1{
         width: 70%;
@@ -824,5 +706,24 @@ th{
     }
     .btn-text{
         font-size: 17px;
+    }
+    .filters-container{
+        display: none;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        column-gap: 10px;
+        height: 470px;
+        overflow-y: auto;
+    }
+    .content2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 10px;
+        margin: 0;
+        padding: 0;
     }
 }
