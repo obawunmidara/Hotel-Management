@@ -21,8 +21,8 @@
             <ul class="nav-list2">
                 <li class="nav-item"><a href="rooms.html" class="navitem">Dashboard</a></li>
                 <li class="nav-item"><a href="services.html" class="navitem">Guests</a></li>
-                <li class="nav-item"><a href="reservations.html" class="navitem">Reservations</a></li>
-                <li class="nav-item"><a href="room.html" class="navitem">Rooms</a></li>
+                <li class="nav-item"><a href="reservation.html" class="navitem">Reservations</a></li>
+                <li class="nav-item"><a href="about.html" class="navitem">Rooms</a></li>
                 <li class="nav-item"><a href="restaurant.html" class="navitem">Restaurants</a></li>
             </ul>
             <ul class="nav-list3">
@@ -31,14 +31,15 @@
                 <li class="nav-item"><i class="fa-solid fa-bell"></i></li>
                 <li class="nav-item"><i class="fa-solid fa-user"></i></li>
            </ul>
-           <button class="responsive-nav-bar">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+           <ul class="responsive-navbar">
+                <li class="nav-item"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+           </ul>
         </nav>
-
+        <div class="responsive-nav-container"></div>
         <div class="container1">
             <div class="content1">
-                <div class="good-morning">Good morning Alex!</div>
+                <h1>Good morning Alex!</h1>
                 <div class="calendar">
                     <span class="calendar-span">
                         <i class="fa-solid fa-calendar-days"></i>
@@ -54,514 +55,444 @@
             </div>
         </div>
     </div>
-    <div class="new-big-div">
-            <div class="body-container1">
-                <div class="checkin">
-                    <p class="check-in-logo"><i class="fa-solid fa-plus" style="display: inline-block;"></i></p>
-                    <p>Check In</p>
-                </div>
-                <div class="checkout">
-                    <p class="check-in-logo"><i class="fa-solid fa-plus" style="display: inline-block;"></i></p>
-                    <p>Check Out</p>
-                </div>
-                <div class="active-bookings">
-                    <h5>Active bookings</h5>
-                    <p class="text">
-                        Compared to (85%) last month
-                    </p>
-                    <div class="percentage">
-                        <div class="percent">
-                            85%
+    <div class="biggest-container">
+        <div class="new-big-div">
+            <div class="new-biggest-div">
+                <div class="newer-big-div">
+                    <div class="body-container1">
+                        <div class="checkin">
+                            <p class="check-in-logo"><i class="fa-solid fa-plus" style="display: inline-block;"></i></p>
+                            <p>Check In</p>
                         </div>
-                        <div class="increment">
-                            +5%
+                        <div class="checkout">
+                            <p class="check-in-logo"><i class="fa-solid fa-plus" style="display: inline-block;"></i></p>
+                            <p>Check Out</p>
                         </div>
-                    </div>
-                </div>
-                <div class="active-bookings">
-                    <h5>Room Occupancy</h5>
-                    <p class="text">
-                        Compared to (85%) last month
-                    </p>
-                    <div class="percentage">
-                        <div class="percent">
-                            65%
-                        </div>
-                        <div class="decrement">
-                            -15%
-                        </div>
-                    </div>
-                </div>
-                <div class="active-bookings">
-                    <h5>Guest Satisfaction</h5>
-                    <p class="text">
-                        Compared to (85%) last month
-                    </p>
-                    <div class="percentage">
-                        <div class="percent">
-                            4.7/5
-                        </div>
-                        <div class="increment">
-                            +15%
-                        </div>
-                    </div>
-                </div>
-                <div class="active-bookings">
-                    <div class="active">
-                        <div class="first">
-                            <h5>Booking</h5>
+                        <div class="active-bookings">
+                            <h5>Active bookings</h5>
                             <p class="text">
                                 Compared to (85%) last month
                             </p>
-                        </div>
-                        <div class="quantity">
-                            <button class="dropdown-btn">
-                                <i class="fa-solid fa-caret-down"></i>
-                                <span class="btn-text" onclick="toggleDropdown()">Quantity</span>
-                            </button>
-                            <div class="dropdown-item" id="dropdownContainer">
-                                <ul class="dropdown-list" id="dropdownList">
-                                    <li class="dropdown-item1">1</li>
-                                    <li class="dropdown-item2">2</li>
-                                    <li class="dropdown-item3">3</li>
-                                    <li class="dropdown-item4">4</li>
-                                    <li class="dropdown-item5">5</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="charts">
-                        <div class="individual-charts">
-                            <div class="chart" id="chart">
-                                <div class="main-chart-container">
-                                    <div class="big-container">
-                                        <div class="charts-container">
-                                            <div class="vertical-line">
-
-                                            </div>
-                                            <div class="chart-container">
-
-                                            </div>
-                                        </div>
-                                        <div class="month">
-                                                <!-- <div class="month-div">
-                                                    January
-                                                </div> -->
-                                        </div>
-                                    </div>
-                                    <div class="big-container">
-                                        <div class="charts-container">
-                                            <div class="vertical-line">
-
-                                            </div>
-                                            <div class="chart-container2">
-
-                                            </div>
-                                        </div>
-                                        <div class="month">
-                                                <!-- <div class="month-div">
-                                                    January
-                                                </div> -->
-                                        </div>
-                                    </div>
-                                    <div class="big-container">
-                                        <div class="charts-container">
-                                            <div class="vertical-line">
-
-                                            </div>
-                                            <div class="chart-container3">
-
-                                            </div>
-                                        </div>
-                                        <div class="month">
-                                                <!-- <div class="month-div">
-                                                    January
-                                                </div> -->
-                                        </div>
-                                    </div>
+                            <div class="percentage">
+                                <div class="percent">
+                                    85%
+                                </div>
+                                <div class="increment">
+                                    +5%
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                        <div class="active-bookings">
+                            <h5>Room Occupancy</h5>
+                            <p class="text">
+                                Compared to (85%) last month
+                            </p>
+                            <div class="percentage">
+                                <div class="percent">
+                                    65%
+                                </div>
+                                <div class="decrement">
+                                    -15%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="active-bookings">
+                            <h5>Guest Satisfaction</h5>
+                            <p class="text">
+                                Compared to (85%) last month
+                            </p>
+                            <div class="percentage">
+                                <div class="percent">
+                                    4.7/5
+                                </div>
+                                <div class="increment">
+                                    +15%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="big-table-container">
+                <div class="new-booking-header">
+                    <div class="newbooking-text">
+                        <div class="new-booking-title">New Bookings</div>
+                        <div class="text1">
+                            Compared to (85%) last month
+                        </div>
+                    </div>
+                    <div class="newbooking-btn">
+                        <button class="dropdown-btn">
+                            <i class="fa-solid fa-caret-down"></i>
+                            <span class="btn-text">Today</span>
+                        </button>
+                        <div class="dropdown-item" id="dropdownContainer">
+                            <ul class="dropdown-list" id="dropdownList">
+                                <li class="dropdown-item1">1</li>
+                                <li class="dropdown-item2">2</li>
+                                <li class="dropdown-item3">3</li>
+                                <li class="dropdown-item4">4</li>
+                                <li class="dropdown-item5">5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Guest Name</th>
+                                <th>Email Address</th>
+                                <th>Room Number</th>
+                                <th>Room Type</th>
+                                <th>Checked In</th>
+                                <th>Checked Out</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>
+                                    <img src="" alt="" class="gues-name-profile">
+                                    Alex Trie
+                                </td>
+                                <td>Alex08@gmail.com</td>
+                                <td>S-01</td>
+                                <td>Single</td>
+                                <td>Jan 26, 2025</td>
+                                <td>Jan 30, 2025</td>
+                                <td>
+                                    <div class="new">
+                                        <span class="status">New</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <td class="arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="big-table-container">
-        <div class="table">
-            <div class="new-booking-header">
-                <div class="newbooking-text">
-                    <div class="new-booking-title">New Bookings</div>
-                    <div class="text1">
-                        Compared to (85%) last month
+        <div class="bigger-footer-div">
+            <div class="active-bookings">
+                <div class="active">
+                    <div class="first">
+                        <h5>Booking</h5>
+                        <p class="text">
+                            Compared to (85%) last month
+                        </p>
+                    </div>
+                    <div class="quantity">
+                        <button class="dropdown-btn">
+                            <i class="fa-solid fa-caret-down"></i>
+                            <span class="btn-text" onclick="toggleDropdown()">Quantity</span>
+                        </button>
+                        <div class="dropdown-item" id="dropdownContainer">
+                            <ul class="dropdown-list" id="dropdownList">
+                                <li class="dropdown-item1">1</li>
+                                <li class="dropdown-item2">2</li>
+                                <li class="dropdown-item3">3</li>
+                                <li class="dropdown-item4">4</li>
+                                <li class="dropdown-item5">5</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="newbooking-btn">
-                    <button class="dropdown-btn">
-                        <i class="fa-solid fa-caret-down"></i>
-                        <span class="btn-text">Today</span>
-                    </button>
-                    <div class="dropdown-item" id="dropdownContainer">
-                        <ul class="dropdown-list" id="dropdownList">
-                            <li class="dropdown-item1">1</li>
-                            <li class="dropdown-item2">2</li>
-                            <li class="dropdown-item3">3</li>
-                            <li class="dropdown-item4">4</li>
-                            <li class="dropdown-item5">5</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Booking ID</th>
-                        <th>Guest Name</th>
-                        <th>Email Address</th>
-                        <th>Room Number</th>
-                        <th>Room Type</th>
-                        <th>Checked In</th>
-                        <th>Checked Out</th>
-                        <th>Status</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
+                <div class="charts">
+                    <div class="individual-charts">
+                        <div class="chart" id="chart">
+                            <!-- <div class="number1">
+                                455
                             </div>
-                        </td>
-                        <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
+                            <div class="number2">
+                                55
                             </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#1233</td>
-                        <td>
-                            <img src="" alt="" class="gues-name-profile">
-                            Alex Trie
-                        </td>
-                        <td>Alex08@gmail.com</td>
-                        <td>S-01</td>
-                        <td>Single</td>
-                        <td>Jan 26, 2025</td>
-                        <td>Jan 30, 2025</td>
-                        <td>
-                            <div class="new">
-                                <span class="status">New</span>
-                            </div>
-                        </td>
-                         <td>
-                            <td class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="new-div">
-        
-    </div>
-    </div>
-    <div class="bigger-footer-div">    
-        <div class="active">
-            <div class="first">
-                <h5>Booking</h5>
-                <p class="text">
-                    Compared to (85%) last month
-                </p>
-            </div>
-            <div class="quantity">
-                <button class="dropdown-btn">
-                    <i class="fa-solid fa-caret-down"></i>
-                    <span class="btn-text" onclick="toggleDropdown()">Quantity</span>
-                </button>
-                <div class="dropdown-item" id="dropdownContainer">
-                    <ul class="dropdown-list" id="dropdownList">
-                        <li class="dropdown-item1">1</li>
-                        <li class="dropdown-item2">2</li>
-                        <li class="dropdown-item3">3</li>
-                        <li class="dropdown-item4">4</li>
-                        <li class="dropdown-item5">5</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="charts">
-            <div class="individual-charts">
-                <div class="chart" id="chart">
-                    <div class="main-chart-container">
-                        <div class="big-container">
-                            <div class="charts-container">
-                                <div class="vertical-line">
+                            <div class="number3">
+                                45
+                            </div> -->
+                            <div class="main-chart-container">
+                                <div class="big-container">
+                                    <div class="charts-container">
+                                        <div class="vertical-line">
 
-                                </div>
-                                <div class="chart-container">
+                                        </div>
+                                        <div class="chart-container">
 
+                                        </div>
+                                    </div>
+                                    <div class="month">
+                                            <div class="month-div">
+                                                January
+                                            </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="month">
-                                    <!-- <div class="month-div">
-                                        January
-                                    </div> -->
-                            </div>
-                        </div>
-                        <div class="big-container">
-                            <div class="charts-container">
-                                <div class="vertical-line">
+                                <div class="big-container">
+                                    <div class="charts-container">
+                                        <div class="vertical-line">
 
-                                </div>
-                                <div class="chart-container2">
+                                        </div>
+                                        <div class="chart-container2">
 
+                                        </div>
+                                    </div>
+                                    <div class="month">
+                                            <div class="month-div">
+                                                January
+                                            </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="month">
-                                    <!-- <div class="month-div">
-                                        January
-                                    </div> -->
-                            </div>
-                        </div>
-                        <div class="big-container">
-                            <div class="charts-container">
-                                <div class="vertical-line">
+                                <div class="big-container">
+                                    <div class="charts-container">
+                                        <div class="vertical-line">
 
-                                </div>
-                                <div class="chart-container3">
+                                        </div>
+                                        <div class="chart-container3">
 
+                                        </div>
+                                    </div>
+                                    <div class="month">
+                                            <div class="month-div">
+                                                January
+                                            </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="month">
-                                    <!-- <div class="month-div">
-                                        January
-                                    </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="main-chart-container">
-                        <div class="big-container">
-                            <div class="charts-container">
-                                <div class="vertical-line">
-
-                                </div>
-                                <div class="chart-container">
-
-                                </div>
-                            </div>
-                            <div class="month">
-                                    <!-- <div class="month-div">
-                                        January
-                                    </div> -->
-                            </div>
+                </div>    
+            </div>
+            <div class="active-bigger">
+                <div class="active">
+                    <div class="first">
+                        <h5>Booking</h5>
+                        <p class="text">
+                            Compared to (85%) last month
+                        </p>
+                    </div>
+                    <div class="quantity">
+                        <button class="dropdown-btn">
+                            <i class="fa-solid fa-caret-down"></i>
+                            <span class="btn-text" onclick="toggleDropdown()">Quantity</span>
+                        </button>
+                        <div class="dropdown-item" id="dropdownContainer">
+                            <ul class="dropdown-list" id="dropdownList">
+                                <li class="dropdown-item1">1</li>
+                                <li class="dropdown-item2">2</li>
+                                <li class="dropdown-item3">3</li>
+                                <li class="dropdown-item4">4</li>
+                                <li class="dropdown-item5">5</li>
+                            </ul>
                         </div>
-                        <div class="big-container">
-                            <div class="charts-container">
-                                <div class="vertical-line">
-
+                    </div>
+                </div>
+                <div class="pie-chart-section">
+                    <div class="first-pie-chart">
+                        <div class="pie-chart" id="pieChart">
+                            <div class="pie-chart-container">
+                                <div class="pie-chart-container1">
+                                    56%
                                 </div>
-                                <div class="chart-container2">
-
+                                <div class="pie-chart-container2">
+                                    44%
                                 </div>
-                            </div>
-                            <div class="month">
-                                    <!-- <div class="month-div">
-                                        January
-                                    </div> -->
-                            </div>
-                        </div>
-                        <div class="big-container">
-                            <div class="charts-container">
-                                <div class="vertical-line">
-
+                                <div class="pie-chart-container3">
+                                    34%
                                 </div>
-                                <div class="chart-container3">
-
-                                </div>
-                            </div>
-                            <div class="month">
-                                    <!-- <div class="month-div">
-                                        January
-                                    </div> -->
                             </div>
                         </div>
                     </div>
